@@ -37,33 +37,6 @@ A partir de los hallazgos, el equipo de Data Science podrá avanzar en la constr
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
-
-### Opción 1 — Google Colab (recomendado)
-
-1. Abre [Google Colab](https://colab.research.google.com/)
-2. Ve a **Archivo → Subir notebook**
-3. Sube el archivo `TelecomX_LATAM.ipynb`
-4. Ejecuta todas las celdas en orden con **Runtime → Run all**
-
-> ✅ No requiere instalación adicional. Todas las librerías están disponibles en Colab.
-
-### Opción 2 — Entorno local
-
-```bash
-# 1. Clona el repositorio
-git clone https://github.com/jealpahu/telecomx-churn-analysis.git
-cd telecomx-churn-analysis
-
-# 2. Instala las dependencias
-pip install pandas numpy matplotlib seaborn requests
-
-# 3. Abre el notebook
-jupyter notebook TelecomX_LATAM.ipynb
-```
-
----
-
 ## 📁 Estructura de Archivos
 
 ```
