@@ -66,25 +66,16 @@ jupyter notebook TelecomX_LATAM.ipynb
 ## 📁 Estructura de Archivos
 
 ```
-telecomx-churn-analysis/
+TelecomX_LATAM/
 │
-├── data/
-│   └── TelecomX_Data.json
-│
-├── img/
-│   ├── churn_distribution.png
-│   ├── churn_by_categorical.png
-│   ├── churn_by_contract.png
-│   ├── churn_by_tenure.png
-│   ├── churn_by_monthly.png
-│   ├── churn_by_total.png
-│   ├── boxplot_charges.png
-│   ├── numeric_distributions.png
-│   ├── scatter_tenure_monthly.png
-│   └── correlation_matrix.png
-│
-├── TelecomX_LATAM.ipynb
-└── README.md
+├── TelecomX_LATAM.ipynb   # Notebook principal con todo el análisis
+├── README.md              # Documentación del proyecto
+└── img/                   # Capturas de los gráficos generados
+    ├── churn_distribution.png
+    ├── churn_by_contract.png
+    ├── churn_by_categorical.png
+    ├── churn_by_tenure.png
+    └── correlation_matrix.png
 ```
 
 ---
@@ -93,20 +84,63 @@ telecomx-churn-analysis/
 
 > Los gráficos se generan automáticamente al ejecutar el notebook.
 
-### Distribución de Churn
-Visualización de la proporción de clientes que cancelaron vs. los que permanecieron.
+### 1. Distribución de Churn
+![Distribución de Churn](img/churn_distribution.png)
+Proporción de clientes que cancelaron (26.5%) vs. los que permanecieron (73.5%).
 
-### Churn por Tipo de Contrato
-Comparación de tasas de evasión entre contratos mes a mes, anuales y bianuales.
+---
 
-### Churn por Variables Categóricas
-Análisis de evasión por género, método de pago, servicio de internet, entre otros.
+### 2. Tasa de Churn por Variables Categóricas
+![Churn por Variables Categóricas](img/churn_by_categorical.png)
+Análisis de evasión por género, adulto mayor, pareja, dependientes, tipo de contrato, método de pago, servicio de internet y factura digital.
 
-### Churn por Antigüedad
-Segmentación de clientes en grupos de tenure para identificar la etapa crítica de riesgo.
+---
 
-### Matriz de Correlación
-Relación entre variables numéricas y la probabilidad de churn.
+### 3. Tasa de Churn por Tipo de Contrato
+![Churn por Contrato](img/churn_by_contract.png)
+Los clientes con contrato **mes a mes** tienen una tasa de churn del 42.7%, muy por encima de la media global.
+
+---
+
+### 4. Distribución de Variables Numéricas por Churn
+![Distribución Numérica](img/numeric_distributions.png)
+Histogramas de antigüedad, cargo mensual y cargo total segmentados por churn.
+
+---
+
+### 5. Boxplot de Variables Numéricas por Churn
+![Boxplot](img/boxplot_charges.png)
+Los clientes que se van tienen menor antigüedad y mayor cargo mensual que los que permanecen.
+
+---
+
+### 6. Tasa de Churn por Grupo de Antigüedad
+![Churn por Antigüedad](img/churn_by_tenure.png)
+Los clientes con **0-12 meses** presentan la mayor tasa de evasión (47.7%), decreciendo a medida que aumenta la antigüedad.
+
+---
+
+### 7. Tasa de Churn por Rango de Cargo Mensual
+![Churn por Cargo Mensual](img/churn_by_monthly.png)
+Los clientes con cargos entre **$70-90/mes** presentan la mayor tasa de evasión (37.8%).
+
+---
+
+### 8. Tasa de Churn por Rango de Cargo Total
+![Churn por Cargo Total](img/churn_by_total.png)
+Los clientes con menor gasto acumulado (**$0-500**) son los más propensos a cancelar (41.4%).
+
+---
+
+### 9. Cargo Mensual vs Antigüedad por Churn
+![Scatter](img/scatter_tenure_monthly.png)
+Zona de alto riesgo identificada: clientes con **baja antigüedad y alto cargo mensual**.
+
+---
+
+### 10. Matriz de Correlación con Churn
+![Correlación](img/correlation_matrix.png)
+La **antigüedad** tiene correlación negativa con churn (-0.35), mientras que los **cargos mensuales** tienen correlación positiva (0.19).
 
 ---
 
