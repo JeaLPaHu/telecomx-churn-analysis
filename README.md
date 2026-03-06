@@ -66,16 +66,25 @@ jupyter notebook TelecomX_LATAM.ipynb
 ## 📁 Estructura de Archivos
 
 ```
-TelecomX_LATAM/
+telecomx-churn-analysis/
 │
-├── TelecomX_LATAM.ipynb   # Notebook principal con todo el análisis
-├── README.md              # Documentación del proyecto
-└── img/                   # Capturas de los gráficos generados
-    ├── churn_distribution.png
-    ├── churn_by_contract.png
-    ├── churn_by_categorical.png
-    ├── churn_by_tenure.png
-    └── correlation_matrix.png
+├── data/
+│   └── TelecomX_Data.json
+│
+├── img/
+│   ├── churn_distribution.png
+│   ├── churn_by_categorical.png
+│   ├── churn_by_contract.png
+│   ├── churn_by_tenure.png
+│   ├── churn_by_monthly.png
+│   ├── churn_by_total.png
+│   ├── boxplot_charges.png
+│   ├── numeric_distributions.png
+│   ├── scatter_tenure_monthly.png
+│   └── correlation_matrix.png
+│
+├── TelecomX_LATAM.ipynb
+└── README.md
 ```
 
 ---
